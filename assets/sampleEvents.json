@@ -1,0 +1,22 @@
+[
+  {
+    "id": "sample-ganesh-chaturthi",
+    "title": "Ganesh Chaturthi",
+    "description": "Festival honoring Lord Ganesha",
+    "startDateTime": "2024-09-07T06:00:00",
+    "endDateTime": "2024-09-07T08:00:00",
+    "location": "Home",
+    "tradition": "Hindu",
+    "reminderMinutesBefore": 90
+  },
+  {
+    "id": "sample-ekadashi",
+    "title": "Ekadashi Fasting",
+    "description": "Ekadashi observance reminder",
+    "startDateTime": "2024-06-18T05:30:00",
+    "endDateTime": "2024-06-18T05:45:00",
+    "location": "",
+    "tradition": "Vaishnavism",
+    "reminderMinutesBefore": 720
+  }
+]

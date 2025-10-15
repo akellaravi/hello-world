@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "name": "Sunrise Sadhana",
+    "slug": "sunrise-sadhana",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.example.sunrisesadhana",
+      "infoPlist": {
+        "NSCalendarsUsageDescription": "Sunrise Sadhana adds religious events to your calendar.",
+        "NSRemindersUsageDescription": "Sunrise Sadhana schedules reminders for upcoming observances.",
+        "NSLocationWhenInUseUsageDescription": "Sunrise Sadhana needs your location to calculate sunrise and sunset times.",
+        "NSUserNotificationUsageDescription": "Sunrise Sadhana sends alerts for upcoming observances."
+      }
+    },
+    "android": {
+      "package": "com.example.sunrisesadhana",
+      "permissions": [
+        "CALENDAR",
+        "READ_CALENDAR",
+        "WRITE_CALENDAR",
+        "SCHEDULE_EXACT_ALARM",
+        "USE_EXACT_ALARM",
+        "VIBRATE",
+        "WAKE_LOCK",
+        "ACCESS_FINE_LOCATION"
+      ],
+      "notification": {
+        "color": "#ff9800"
+      }
+    },
+    "plugins": [
+      [
+        "expo-calendar",
+        {
+          "calendarPermission": "Allow Sunrise Sadhana to access your calendars.",
+          "remindersPermission": "Allow Sunrise Sadhana to manage reminders."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "mode": "production"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "00000000-0000-0000-0000-000000000000"
+      }
+    }
+  }
+}
